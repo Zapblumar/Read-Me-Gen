@@ -1,5 +1,6 @@
 const fs = require('fs');
-
+const inquirer = require("inquirer")
+const generateMarkdown = require("./develop/utils/generateMarkdown")
 // array of questions for user
 const question = [
     ,
@@ -34,13 +35,14 @@ const questions = [
     {
         type: 'checkbox',
         name: 'installation',
-        message: "What do you need to install first?"
+        message: "What do you need to install first?",
+        choices: ["node", "javascript", "css", "jquary", "html", "ES6"]
     },
 
     {
-        type: 'checkbox',
+        type: 'input',
         name: 'usage',
-        message: "How do you use this?"
+        message: "put screenshot here please?"
     },
 
     {
@@ -50,38 +52,34 @@ const questions = [
     },
 
     {
-        type: 'list(?)',
+        type: 'list',
         name: 'license',
-        message: "What license did you use?"
+        message: "What license did you use?",
+        choices: ["unlicensed", "DUB:", "wtfpl", "Hex.pm:",]
     },
 
     {
         type: 'input',
-        name: 'badge',
-        message: "What color badge do you want?"
-    },
-
-    {
-        type: 'input',
-        name: 'features',
-        message: "What are you features (if any)?"
-    },
-
-    {
-        type: 'input',
-        name: 'contributers',
-        message: "Who are the contributers?"
+        name: 'link',
+        message: "what is you github?"
     }
+
 ]
 
 
-prompt(questions)
-    .then(answers => console.log(answers));
+
 
 // function to initialize program
 function init() {
-    console.log("hello world")
-}
+    inquirer
+        .prompt(questions)
+        .then(answers => {
 
+            fs.writeFileSync("./README.md", generateMarkdown(answers))
+
+            const data = fs.readFileSync("./README.md", generateMarkdown(answers))
+
+        })
+}
 // function call to initialize program
 init();
