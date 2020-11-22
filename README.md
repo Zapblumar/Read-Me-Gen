@@ -1,21 +1,24 @@
- # jh
-![License: MIT](https://img.shields.io/badge/License-Ore License:-Cyan.svg)
+ # Read-me
+![License: MIT](https://img.shields.io/badge/License-Hex.pm:-Cyan.svg)
 ## Table of contents
-* [desctiption of the Project](#desctiption-of-the-project)
-* [Built with](#built-with)
+* [Desctiption of the Project](#desctiption-of-the-project)
+* [Build with](#build-with)
 * [License](#license)
 * [Githun Link](#github-link)
-* [screenshot](#screenshot)
-* [credit](#credit)
-## desctiption of the Project 
-kg
+* [Screenshot](#screenshot)
+* [Credit](#credit)
+* [Test](#test)
+## Desctiption of the Project 
+This is a read-me generator
 ## Build With
-node
+node,javascript,jquary,ES6
 ## License
-https://choosealicense.com/licenses/Ore License:/
+https://choosealicense.com/licenses/Hex.pm:/
 ## Github Link
-joe.com
-## screenshot
-jj
-## credit 
-cc
+Zapblumar@github.com
+## Screenshot
+later
+## Credit 
+jason
+## Test
+"First you clone the repo into whichever file you want, then you type node index.js to use it."

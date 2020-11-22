@@ -1,19 +1,7 @@
 const fs = require('fs');
 const inquirer = require("inquirer")
 const generateMarkdown = require("./develop/utils/generateMarkdown")
-// array of questions for user
-const question = [
-    ,
-    ,
-    "table of context...",
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
 
-];
 
 // function to write README file
 function writeToFile(fileName, data) {
@@ -61,7 +49,7 @@ const questions = [
     {
         type: 'input',
         name: 'link',
-        message: "what is you github?"
+        message: "what is you github link?"
     }
 
 ]

@@ -4,13 +4,14 @@ function generateMarkdown(answers) {
   return ` # ${title}
 ![License: MIT](https://img.shields.io/badge/License-${license}-Cyan.svg)
 ## Table of contents
-* [desctiption of the Project](#desctiption-of-the-project)
-* [Built with](#built-with)
+* [Desctiption of the Project](#desctiption-of-the-project)
+* [Build with](#build-with)
 * [License](#license)
 * [Githun Link](#github-link)
-* [screenshot](#screenshot)
-* [credit](#credit)
-## desctiption of the Project 
+* [Screenshot](#screenshot)
+* [Credit](#credit)
+* [Test](#test)
+## Desctiption of the Project 
 ${desctiption}
 ## Build With
 ${installation}
@@ -18,10 +19,12 @@ ${installation}
 https://choosealicense.com/licenses/${license}/
 ## Github Link
 ${link}
-## screenshot
+## Screenshot
 ${usage}
-## credit 
-${credit}`
+## Credit 
+${credit}
+## Test
+"First you clone the repo into whichever file you want, then you type node index.js to use it."`
 }
 module.exports = generateMarkdown;
 
